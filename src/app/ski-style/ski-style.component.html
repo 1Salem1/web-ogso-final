@@ -1,0 +1,29 @@
+<html>
+
+    <body>
+<div class="container">
+  <form >
+  <fieldset  class="field-form">
+  <legend class="title"><h4>Your Ski Style</h4></legend>
+  <div class="container section row">
+    <select   #mySelect   id="select_id" class="browser-default"  >
+      <option value="" disabled selected >Choose your Ski style</option>
+      <option value="Piste">Piste</option>
+      <option value="Freeride">Freeride</option>
+      <option value="Powder">Powder</option>
+      <option value="Couloire">Couloire</option>
+    </select>
+    </div>
+  <a (click)="onChange(mySelect.value)"  routerLink="/riding" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
+
+  </fieldset>
+  
+  
+
+  </form>
+
+  
+</div>
+</body>
+
+</html>

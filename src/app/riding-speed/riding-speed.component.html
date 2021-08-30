@@ -1,0 +1,30 @@
+<html>
+
+    <body>
+<div class="container">
+  <form  [formGroup]='myForm'>
+  <fieldset  class="field-form">
+    <legend class="title"><h4>Riding speed preference</h4></legend>
+    <p>
+        <label>
+          <input (change)="setSlow()" class="with-gap" name="radio1" type="radio"  />
+          <span>Slow</span>
+        </label>
+        <label>
+          <input (change)="setFast()" class="with-gap" name="radio1" type="radio"  />
+          <span>Fast</span>
+        </label>
+      </p>
+      <a  routerLink="/result" (click)="sendRiding()" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
+</fieldset>
+  
+
+
+
+</form>
+
+
+</div>
+</body>
+
+</html>

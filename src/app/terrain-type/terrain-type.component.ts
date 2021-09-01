@@ -11,10 +11,7 @@ import { SharedService } from '../shared/shared.service';
 export class TerrainTypeComponent implements OnInit {
   myForm: any;
 
-  constructor(private fb : FormBuilder ,private shared:SharedService , private router: Router) { 
-    this.myForm = this.fb.group({
-      height : ''
-    });
+  constructor(private shared:SharedService , private router: Router) { 
   }
 
   ngOnInit(): void {

@@ -28,7 +28,6 @@ myForm :FormGroup;
         let jsonF = JSON.stringify(this.myForm.value);
         var obj = JSON.parse(jsonF);
         this.shared.setHeight(obj.height)
-        console.log(obj.height)
       })
 
   }

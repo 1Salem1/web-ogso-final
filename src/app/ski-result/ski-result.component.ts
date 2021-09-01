@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../shared/shared.service';
+import { Product, products ,Prediction } from '../skis';
 @Component({
   selector: 'app-ski-result',
   templateUrl: './ski-result.component.html',
@@ -14,6 +15,8 @@ export class SkiResultComponent implements OnInit {
   riding_speed: string = '';
   rec_height : number = 0 ;
   rec_ski_name : string = '';
+   result: Array<Prediction> =[];
+   predicted_value :number = 0;
   constructor(private shared : SharedService) { }
 
   ngOnInit(): void {
@@ -23,28 +26,42 @@ export class SkiResultComponent implements OnInit {
    this.terrain = this.shared.getTerrainType()
    this.ski_style = this.shared.getSkiStyle()
    this.riding_speed = this.shared.getRiding()
-  
+   
 
-   if(this.height  >= 160 && this.height  <= 170 )
-   { if(this.weight <= 46 )
-     this.rec_height = 155
+   for (var ski of products){
+
+     if (this.height >= ski.min_height && this.height <= ski.max_height){
+    this.predicted_value += 22.5
+     } 
+     if (this.weight >= ski.min_weight && this.weight <= ski.max_weight){
+      this.predicted_value += 22.5
+     } 
+     if (ski.ski_level.indexOf(this.ski_level) > -1){
+      this.predicted_value += 5
+     }
+     if (ski.playground.indexOf(this.terrain) > -1){
+      this.predicted_value += 20
+     }
+     if (ski.ski_style.indexOf(this.ski_style) > -1){
+      this.predicted_value += 20
+     }
+     if (this.riding_speed == ski.riding_speed){
+      this.predicted_value += 10
+     }
+     this.result.push({
+       prediction : this.predicted_value,
+       name : ski.name,
+       size : ski.size
+     })
+     this.predicted_value = 0;
+   
    }
-   if(this.height  >= 169 && this.height  <= 179 )
-   { if(this.weight  >= 46 && this.weight  <= 58)
-     this.rec_height = 164
-   }
-   if(this.height  >= 177 && this.height  <= 187 )
-   { if(this.weight  >= 59 && this.weight  <= 71)
-     this.rec_height = 172
-   }
-   if(this.height  >=185  && this.height  <= 195 )
-   { if(this.weight  >= 71 )
-     this.rec_height = 180
-   }
-   if(this.terrain == "TR" && this.ski_style == "Piste" && this.riding_speed =="Fast")
-   {this.rec_ski_name = "BONATTI 70" ;}
-   alert("Votre SKi EST " + this.rec_ski_name + "SIZE " + this.rec_height)
+   this.result.sort(function(a ,b){
+    return b.prediction - a.prediction
+  })
+   console.log(this.result)
   }
+
   
 
   

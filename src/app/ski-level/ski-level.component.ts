@@ -11,14 +11,11 @@ import { SharedService } from '../shared/shared.service';
 export class  SkiLevelComponent implements OnInit {
 
   visible : boolean = true ;
-myForm :FormGroup;
   location: any;
 
 
-  constructor(private fb : FormBuilder ,private shared:SharedService , private router: Router) { 
-    this.myForm = this.fb.group({
-      height : ''
-    });
+  constructor(private shared:SharedService , private router: Router) { 
+  
   }  
   ngOnInit(): void {
     

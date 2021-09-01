@@ -30,7 +30,6 @@ export class Content2Component implements OnInit {
           let jsonF = JSON.stringify(this.myForm.value);
           var obj = JSON.parse(jsonF);
           this.shared.setWeight(obj.weight)
-          console.log(obj.weight)
         })
       
     }

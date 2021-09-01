@@ -10,23 +10,18 @@ import { SharedService } from '../shared/shared.service';
 export class RidingSpeedComponent implements OnInit {
 myForm : any ;
 riding_speed : any  ;
-constructor(private fb:FormBuilder , private shared : SharedService){
-this.myForm = this.fb.group({
-  gender: "" ,
-});
+constructor(private shared : SharedService){
+
 }
 
 
 ngOnInit(): void {
 }
-onChange(){
-alert(this.myForm.gender)
-}
 setSlow(){
-  this.riding_speed = "Slow"
+  this.riding_speed = "slow"
 }
 setFast(){
-  this.riding_speed = "Fast"
+  this.riding_speed = "fast"
 }
 
 sendRiding(){

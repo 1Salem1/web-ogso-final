@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "stage-test-f708e": {
+      "hosting": {
+        "test-app": [
+          "stage-test-f708e"
+        ]
+      }
+    }
+  }
+}

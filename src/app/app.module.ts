@@ -11,7 +11,7 @@ import { SkiLevelComponent } from './ski-level/ski-level.component';
 import { TerrainTypeComponent } from './terrain-type/terrain-type.component';
 import { SkiStyleComponent } from './ski-style/ski-style.component';
 import { RidingSpeedComponent } from './riding-speed/riding-speed.component';
-
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [

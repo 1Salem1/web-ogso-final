@@ -17,6 +17,13 @@ export interface Prediction {
   prediction : number;
   name : string;
   size : number;
+  weight : number;
+  weight_valid : boolean
+  height_valid : boolean
+   ski_level_valid : boolean 
+   playground_valid : boolean;
+   ski_style_valid : boolean;
+   riding_speed_valid : boolean ;
 }
 
 export const products = [

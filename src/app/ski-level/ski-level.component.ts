@@ -24,7 +24,6 @@ export class  SkiLevelComponent implements OnInit {
   }
   onChange(x: string){
     this.shared.setSkilevel(x)
-    console.log(x)
 
 
   }

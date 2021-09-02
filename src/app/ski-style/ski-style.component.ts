@@ -24,7 +24,6 @@ export class SkiStyleComponent implements OnInit {
   }
   onChange(x: string){
     this.shared.setSkiStyle(x)
-    console.log(x)
 
 
   }

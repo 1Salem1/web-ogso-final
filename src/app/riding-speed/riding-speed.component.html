@@ -1,30 +1,23 @@
-<html>
-
-    <body>
-<div class="container">
-  <form  >
-  <fieldset  class="field-form">
-    <legend class="title"><h4>Riding speed preference</h4></legend>
-    <p>
-        <label>
-          <input (change)="setSlow()" class="with-gap" name="radio1" type="radio"  />
-          <span>Slow</span>
-        </label>
-        <label>
-          <input (change)="setFast()" class="with-gap" name="radio1" type="radio"  />
-          <span>Fast</span>
-        </label>
-      </p>
-      <a  routerLink="/result" (click)="sendRiding()" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
-</fieldset>
-  
-
-
-
-</form>
-
-
-</div>
-</body>
-
-</html>
+<div class="step">
+  <h3 class="main_question mb-4"><strong>7 of 7</strong>Choose your riding speed</h3>
+  <div class="review_block">
+      <ul>
+          <li>
+              <div class="checkbox_radio_container">
+                  <input (change)='setSlow()' type="radio" id="no" name="q1"  class="required" value="slow" >
+                  <label class="radio" for="no"></label>
+                  <label for="no" class="wrapper">Slow</label>
+              </div>
+          </li>
+          <li>
+              <div class="checkbox_radio_container">
+                  <input (change)='setFast()' type="radio" id="maybe"  name="q1" class="required" value="fast" >
+                  <label class="radio" for="maybe"></label>
+                  <label for="maybe" class="wrapper">Fast</label>
+              </div>
+          </li>
+      </ul>
+      </div>
+      <button routerLink="/SkiLevel" type="button" name="backward" class="backward">Prev</button>
+      <button routerLink="/result" type="button" name="forward" class="forward">Next</button>
+          </div>

@@ -17,8 +17,19 @@ export class TerrainTypeComponent implements OnInit {
   ngOnInit(): void {
   }
   onChange(x: string){
-    this.shared.setTerrainType(x)
+    
   }
-
+tfm(){
+  this.shared.setTerrainType('touring-front-mountain')
+}
+tbm(){
+  this.shared.setTerrainType('touring-back-mountain')
+}
+tm(){
+  this.shared.setTerrainType('touring-mountaineering')
+}
+tr(){
+  this.shared.setTerrainType('touring-race')
+}
 
 }

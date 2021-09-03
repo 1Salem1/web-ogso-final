@@ -23,8 +23,22 @@ export class SkiStyleComponent implements OnInit {
 
   }
   onChange(x: string){
-    this.shared.setSkiStyle(x)
+ 
 
 
+
+
+  }
+  piste(){
+    this.shared.setSkiStyle('piste')
+  }
+  powder(){
+    this.shared.setSkiStyle('powder')
+  }
+  couloire(){
+    this.shared.setSkiStyle('couloire')
+  }
+  freeride(){
+    this.shared.setSkiStyle('freeride')
   }
 }

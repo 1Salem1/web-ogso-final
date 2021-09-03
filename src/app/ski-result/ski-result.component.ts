@@ -165,7 +165,7 @@ if((this.height >= ski.min_height && this.height <= ski.max_height) ) {
   })
 
   console.log(this.data)
-
+  console.log(this.height , this.weight ,this.ski_level,this.terrain,this.riding_speed,this.ski_style)
   }
 
   

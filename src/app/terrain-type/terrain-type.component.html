@@ -1,10 +1,64 @@
+
+
+	                                <div class="step">
+                                    <h3 class="main_question mb-4"><strong>5 of 7</strong>Choose your terrain type</h3>
+                                    <div class="review_block">
+                                        <ul>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)="tfm()"type="radio" id="no" name="q1" class="required" value="touring-front-mountain" >
+                                                    <label class="radio" for="no"></label>
+                                                    <label for="no" class="wrapper">Touring front mountain</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)="tbm()" type="radio" id="maybe" name="q1"  class="required" value="touring-back-mountain" >
+                                                    <label class="radio" for="maybe"></label>
+                                                    <label for="maybe" class="wrapper">Touring back mountain</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)="tm()" type="radio" id="probably" name="q1" class="required" value="touring-mountaineering" >
+                                                    <label class="radio" for="probably"></label>
+                                                    <label for="probably" class="wrapper">Touring Mountaineering</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="checkbox_radio_container">
+                                                    <input (change)="tr()" type="radio" id="sure" name="q1"  class="required" value="touring-race" >
+                                                    <label class="radio" for="sure"></label>
+                                                    <label for="sure" class="wrapper">Touring race</label>
+                                                </div>
+
+                                            </li>
+                                        </ul>
+                                        <button routerLink="/SkiLevel" type="button" name="backward" class="backward">Prev</button>
+                                        <button routerLink="/style" type="button" name="forward" class="forward">Next</button>
+                                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <html>
 
     <body>
 <div class="container">
   <form >
-  <fieldset  class="field-form">
-  <legend class="title"><h4>Terrain Type</h4></legend>
   <div class="container section row">
     <select   #mySelect   id="select_id" class="browser-default"  >
       <option value="" disabled selected >Choose your terrain type </option>
@@ -16,7 +70,6 @@
     </div>
   <a (click)="onChange(mySelect.value)"  routerLink="/style" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
 
-  </fieldset>
   
   
 
@@ -27,3 +80,4 @@
 </body>
 
 </html>
+-->

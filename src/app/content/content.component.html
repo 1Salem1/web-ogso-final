@@ -1,21 +1,27 @@
-<html>
 
+
+
+
+<html>
     <body>
+      
+
+
+
+      
 <div class="container">
   <form  [formGroup]='myForm'>
-  <fieldset  class="field-form">
-  <legend class="title"><h4>Your Height</h4></legend>
-  <h5 for="group1">Choose your correct height</h5>
-  <p class="range-field">
-    <input  formControlName = "height"   type="range" id="range_height" min="130" max="210" step="1"   oninput="this.nextElementSibling.value = this.value +' cm'"/> 
-    <input  type="text"id="output-weight" /> <output for ="range_height" ></output>
- 
-  </p>
-
-  
-  <a   routerLink="/step2" id= "button"  class="waves-effect waves-light btn-large">Next Step</a>
-  </fieldset>
-  
+    <div class="step">
+      <h3 class="main_question mb-4"><strong>1 of 5</strong>Choose your height</h3>
+      <div class="review_block">
+        <p class="range-field">
+          <input  formControlName = "height"  class="slider" type="range" id="range_height" min="130" max="210" step="1"   oninput="this.nextElementSibling.value = this.value +' cm'"/> 
+          <input  type="text"id="output-weight" /> <output for ="range_height" ></output>
+       
+        </p>
+      </div>
+    </div>
+    <button routerLink="/step2" type="button" name="forward" class="forward">Next</button>
   
 
   </form>

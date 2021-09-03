@@ -27,5 +27,17 @@ export class  SkiLevelComponent implements OnInit {
 
 
   }
+  newbie(){
+    this.shared.setSkilevel('newbie')
+  }
+  proguide(){
+    this.shared.setSkilevel('pro-guide')
+  }
+  confirmed(){
+    this.shared.setSkilevel('confirmed')
+  }
+  intermediate(){
+    this.shared.setSkilevel('intermediate')
+  }
 
 }

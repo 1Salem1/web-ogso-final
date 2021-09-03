@@ -18,16 +18,16 @@ constructor(private shared : SharedService){
 ngOnInit(): void {
 }
 setSlow(){
-  this.riding_speed = "slow"
+  this.shared.setRiding('slow')
 }
+
 setFast(){
-  this.riding_speed = "fast"
+  this.shared.setRiding('fast')
+}
 }
 
-sendRiding(){
-  this.shared.setRiding(this.riding_speed)
-}
+  
 
 
 
-}
+

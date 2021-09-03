@@ -1,16 +1,95 @@
-<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>TestApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">              
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
-<body>
-  <app-nav></app-nav>
-  <app-root></app-root>
-  <app-footer></app-footer>
-</body>
-</html>
 
+<body class="style_2">
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-5">
+          <a href="index.html"><img src="./assets/images/logo.svg" alt="" width="50" height="55"></a>
+        </div>
+        <div class="col-7">
+          <div id="social">
+            <ul>
+              <li><a href="#0"><i class="social_facebook"></i></a></li>
+              <li><a href="#0"><i class="social_twitter"></i></a></li>
+              <li><a href="#0"><i class="social_instagram"></i></a></li>
+              <li><a href="#0"><i class="social_linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </header>
+  <!-- /header -->
+
+  <div class="wrapper_centering">
+    <div class="container_centering">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div [ngIf]="false"class="col-xl-6 col-lg-6 d-flex align-items-center">
+            <div class="main_title_1">
+              <h3><img src="img/main_icon_1.svg" width="80" height="80" alt=""> Survey</h3>
+              <p>An mei sadipscing dissentiet, eos ea partem viderer facilisi. Brute nostrud democritum in vis, nam ei
+                erat zril mediocrem. No postea diceret vix.</p>
+              <p><em>- The Satisfyc Team</em></p>
+            </div>
+          </div>
+          <!-- /col -->
+          <div class="col-xl-5 col-lg-5">
+            <div id="wizard_container">
+              <div id="top-wizard">
+                <div id="progressbar"></div>
+              </div>
+              <!-- /top-wizard -->
+              <form id="wrapped" method="POST" autocomplete="off">
+                <input id="website" name="website" type="text" value="">
+                <!-- Leave for security protection, read docs for details -->
+                <div id="middle-wizard">
+
+       
+                  <!-- /step 1-->
+                  <div class="step">
+                  <div class="review_block">
+                  <app-root ></app-root>
+                </div>
+                  </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            ©2021 Ogso Mountains essentiels
+          </div>
+          <div class="col-md-9">
+            <ul class="clearfix">
+              <li><a href="#0" class="animated_link">Visite our website</a></li>
+              <li><a href="index.html" class="animated_link">Shop</a></li>
+              <li><a href="index-2.html" class="animated_link">Terms & conditions</a></li>
+              <li><a href="index-3.html" class="animated_link">About us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

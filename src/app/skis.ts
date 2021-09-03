@@ -13,6 +13,21 @@ export interface Product {
   riding_speed: string;
 
 }
+
+
+export interface info {
+  date :  string,
+   height : number,
+   weight : number ,
+   ski_level : string,
+   terrain : string,
+   ski_style : string,
+   rec_ski_1 :string,
+   rec_ski_2 : string,
+   rec_ski_3 : string,
+}
+
+
 export interface Prediction {
   prediction : number;
   name : string;

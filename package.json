@@ -24,6 +24,8 @@
     "@firebase/app": "^0.7.0",
     "angular": "^1.8.2",
     "angular-bootstrap-md": "^12.0.0",
+    "angular2-csv": "^0.2.9",
+    "file-saver": "^2.0.5",
     "firebase": "^9.0.1",
     "firestore": "^1.1.6",
     "lite-server": "^2.6.1",

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedService } from '../shared/shared.service';
-import { Product, products ,Prediction } from '../skis';
+import { info , Product, products ,Prediction } from '../skis';
 @Component({
   selector: 'app-ski-result',
   templateUrl: './ski-result.component.html',
@@ -23,6 +23,19 @@ export class SkiResultComponent implements OnInit {
   playground_valid: boolean = false;
   riding_speed_valid: boolean = false;
   size: number = 0;
+  data : Array<info> = [];
+  options: Object = {
+    fieldSeparator: ',',
+    quoteStrings: '"',
+    decimalseparator: '.',
+    showLabels: false,
+    headers: [],
+    showTitle: true,
+    title: 'asfasf',
+    useBom: false,
+    removeNewLines: true,
+    keys: ['date','height','weight' ]
+  };
   constructor(private shared : SharedService) { }   
   ngOnInit(): void {
     
@@ -138,6 +151,20 @@ if((this.height >= ski.min_height && this.height <= ski.max_height) ) {
     console.log("problem ",error)
   })
  */
+
+  this.data.push ({
+    date :  new Date().toISOString().slice(0, 10),
+   height : this.height,
+   weight : this.weight ,
+   ski_level : this.ski_level,
+   terrain : this.terrain,
+   ski_style : this.ski_style,
+   rec_ski_1 : this.result[0].name,
+   rec_ski_2 : this.result[1].name,
+   rec_ski_3 : this.result[2].name,
+  })
+
+  console.log(this.data)
 
   }
 

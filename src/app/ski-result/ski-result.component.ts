@@ -51,7 +51,7 @@ export class SkiResultComponent implements OnInit {
 
    
      if ((this.height >= ski.min_height && this.height <= ski.max_height) &&  (this.weight >= ski.min_weight && this.weight <= ski.max_weight)){
-    this.predicted_value += 60
+    this.predicted_value += 120
     this.height_valid = true ;
     this.weight_valid = true ;
      }
@@ -60,7 +60,7 @@ export class SkiResultComponent implements OnInit {
 
     if (this.height == (ski.min_height + ski.max_height)/2 || (this.height+1 == (ski.min_height + ski.max_height)/2 || this.height-1 == (ski.min_height + ski.max_height)/2) )  {
      if (this.weight == (ski.min_weight + ski.max_weight)/2 || (this.weight+1 == (ski.min_weight + ski.max_weight)/2 || this.weight-1 == (ski.min_weight + ski.max_weight)/2) || ((this.weight+2 == (ski.min_weight+ ski.max_weight)/2 || (this.weight-2 == (ski.min_weight + ski.max_weight)/2)))){
-      this.predicted_value += 55
+      this.predicted_value += 80
       this.height_valid = true ;
       this.weight_valid = true ;
     }
@@ -71,23 +71,18 @@ export class SkiResultComponent implements OnInit {
 }
 
 if((this.height >= ski.min_height && this.height <= ski.max_height) ) {
-  this.predicted_value += 25
-  if(this.weight >= ski.max_weight ){
-     this.size= ski.size+8 
-    this.predicted_value += 55
-  }
-  else{
-    this.size= ski.size
-  }
+  this.predicted_value += 100
 }
-
    
-     if( (ski.ski_level.indexOf(this.ski_level) > -1) &&  (ski.playground.indexOf(this.terrain) > -1) && (ski.ski_style.indexOf(this.ski_style) > -1) ){
-      this.predicted_value += 100
+     if( (ski.ski_level.indexOf(this.ski_level) > -1) &&  (ski.playground.indexOf(this.terrain) > -1) && (ski.ski_style.indexOf(this.ski_style) > -1)&& (ski.ski_style.indexOf(this.ski_style) > -1)){
+      this.predicted_value += 200
       this.ski_level_valid = true ;
      }
+     else{
+
+     }
      if (ski.playground.indexOf(this.terrain) > -1){
-      this.predicted_value += 40
+      this.predicted_value += 30
       this.playground_valid = true;
      }
      if (ski.ski_style.indexOf(this.ski_style) > -1){
@@ -96,10 +91,10 @@ if((this.height >= ski.min_height && this.height <= ski.max_height) ) {
      }
      if (this.riding_speed == ski.riding_speed){
        if ((this.riding_speed =="slow") && (ski.family="SUPER ROCKER")){
-      this.predicted_value += 40
+      this.predicted_value += 30
        }
        if ((this.riding_speed =="fast") && (ski.family="NEOTERIC CAMBER")){
-        this.predicted_value += 40
+        this.predicted_value += 30
 
          }
          else {
@@ -110,14 +105,15 @@ if((this.height >= ski.min_height && this.height <= ski.max_height) ) {
      this.result.push({
        prediction : this.predicted_value,
        name : ski.name,
-       size : this.size,
+       size : ski.size,
        weight : this.weight,
        weight_valid : this.weight_valid,
        height_valid : this.height_valid,
        ski_level_valid : this.ski_level_valid, 
        playground_valid : this.playground_valid,
        ski_style_valid : this.ski_level_valid,
-       riding_speed_valid : this.riding_speed_valid
+       riding_speed_valid : this.riding_speed_valid,
+       src : ski.src
      })
      this.predicted_value = 0;
      
@@ -126,7 +122,7 @@ if((this.height >= ski.min_height && this.height <= ski.max_height) ) {
 
    }
 
-   this.result.sort(function(a ,b){
+   this.result.sort(function(a ,b){ 
     return b.prediction - a.prediction 
   })
 
@@ -164,11 +160,9 @@ if((this.height >= ski.min_height && this.height <= ski.max_height) ) {
    rec_ski_3 : this.result[2].name,
   })
 
-  console.log(this.data)
-  console.log(this.height , this.weight ,this.ski_level,this.terrain,this.riding_speed,this.ski_style)
+  console.log(this.result)
   }
 
-  
 
 
 }

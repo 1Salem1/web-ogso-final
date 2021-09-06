@@ -4,6 +4,20 @@ main {
     position : relative;
    
 }
+.checkbox_radio_container .radio, .checkbox_radio_container .checkbox {
+  display: inline-block  !important;
+  width: 25px !important;
+  height: 25px !important;
+  padding: 6px !important; 
+  background: #fff !important;
+  border-radius: 50% !important;
+  position: absolute !important;
+  z-index: 9 !important; 
+  left: 8px !important;
+  top: 7px !important;
+  display: flex !important;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
     :root {
@@ -11752,6 +11766,8 @@ span.error:after {
 .checkbox_radio_container {
   margin-bottom: 10px;
   position: relative;
+  text-align: left !important;
+  font-size: large;
 }
 .checkbox_radio_container input[type="checkbox"] {
   display: none;

@@ -8,14 +8,14 @@ import { TerrainTypeComponent } from './terrain-type/terrain-type.component';
 import { SkiStyleComponent } from './ski-style/ski-style.component';
 import { RidingSpeedComponent } from './riding-speed/riding-speed.component';
 const routes: Routes = [
-{ path: 'step1',   component:ContentComponent   , data : {animation : 'isRight'}},
-{ path: 'step2',    component:Content2Component  , data :{animation : 'isLeft'}},
-{ path: 'terrain',   component:TerrainTypeComponent  , data :{animation : 'isRight'}},
-{ path: 'riding',   component:RidingSpeedComponent   , data :{animation : 'isLeft'}},
-{ path: 'style',   component:SkiStyleComponent   , data :{animation : 'isLeft'}},
- { path: 'SkiLevel', component:SkiLevelComponent  , data :{animation : 'isRight'}},
- { path: 'result',   component:SkiResultComponent , data :{animation : 'isLeft'}},
- { path: '',         component:ContentComponent , data : {animation : 'isRight'}}
+{ path: 'step1',   component:ContentComponent    },
+{ path: 'step2',    component:Content2Component  },
+{ path: 'terrain',   component:TerrainTypeComponent  },
+{ path: 'riding',   component:RidingSpeedComponent   },
+{ path: 'style',   component:SkiStyleComponent   },
+ { path: 'SkiLevel', component:SkiLevelComponent  },
+ { path: 'result',   component:SkiResultComponent , data :{animation : 'isRight'}},
+ { path: '',         component:ContentComponent }
 ];
 
 @NgModule({

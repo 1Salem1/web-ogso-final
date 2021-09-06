@@ -4,19 +4,14 @@
 
 <html>
     <body>
-      
-
-
-
-      
 <div class="container">
   <form  [formGroup]='myForm'>
     <div class="step">
-      <h3 class="main_question mb-4"><strong>1 of 5</strong>Choose your height</h3>
+      <h3 class="main_question mb-4"><strong>1 of 6</strong>Choose your height</h3>
       <div class="review_block">
         <p class="range-field">
           <input  formControlName = "height"  class="slider" type="range" id="range_height" min="130" max="210" step="1"   oninput="this.nextElementSibling.value = this.value +' cm'"/> 
-          <input  type="text"id="output-weight" /> <output for ="range_height" ></output>
+       <output for ="range_height" ></output>
        
         </p>
       </div>

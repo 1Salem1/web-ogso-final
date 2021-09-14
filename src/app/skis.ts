@@ -313,7 +313,7 @@ export interface Prediction {
     category: 'ULTRA LIGHT',
     name: "CORBET'S 110 SR UL",
     size: 171,
-    max_height: 181,
+    max_height: 186,
     min_height: 0,
     max_weight: 60,
     min_weight: 0,
@@ -330,8 +330,8 @@ export interface Prediction {
     category: 'ULTRA LIGHT',
     name: "CORBET'S 110 SR UL" ,
     size: 179,
-    max_height: 189,
-    min_height: 179,
+    max_height: 184,
+    min_height: 174,
     max_weight: 75,
     min_weight: 60,
     ski_level: ['intermediate', 'confirmed', 'pro-guide'],
@@ -347,8 +347,8 @@ export interface Prediction {
     category: 'ULTRA LIGHT',
     name: "CORBET'S 110 SR UL",
     size: 187,
-    max_height: 197,
-    min_height: 187,
+    max_height: 192,
+    min_height: 182,
     max_weight: 89,
     min_weight: 77,
     ski_level: ['intermediate', 'confirmed', 'pro-guide'],
@@ -365,7 +365,7 @@ export interface Prediction {
     name: "CORBET'S 110 SR UL",
     size: 195,
     max_height: 999,
-    min_height: 195,
+    min_height: 190,
     max_weight: 999,
     min_weight: 90,
     ski_level: ['intermediate', 'confirmed', 'pro-guide'],
@@ -381,7 +381,7 @@ export interface Prediction {
 
   , {
     family: 'SUPER ROCKER',
-    category: 'MEDIUM LIGHT',
+    category: 'ULTRA LIGHT',
     name: "CORBET'S 110 SR ML",
     size: 195,
     max_height: 999,
@@ -656,7 +656,7 @@ export interface Prediction {
   {
     family: 'SUPER ROCKER',
     category: 'MEDIUM LIGHT',
-    name: "SPENCER 110 SR ML",
+    name: "SPENEOER 110 SR ML",
     size: 171,
     max_height: 181,
     min_height: 0,
@@ -666,14 +666,14 @@ export interface Prediction {
     playground: ['touring-front-mountain'],
     ski_style: ['powder', 'freeride'],
     riding_speed: 'slow',
-    src : "../assets/SKIS-IMAGES/sr-ml-spencer-top.png"
+    src : "../assets/SKIS-IMAGES/sr-ml-speNEOer-top.png"
 
 
   }
   , {
     family: 'SUPER ROCKER',
     category: 'MEDIUM LIGHT',
-    name: "SPENCER 110 SR ML",
+    name: "SPENEOER 110 SR ML",
     size: 179,
     max_height: 189,
     min_height: 179,
@@ -683,14 +683,14 @@ export interface Prediction {
     playground: ['touring-front-mountain'],
     ski_style: ['powder', 'freeride'],
     riding_speed: 'slow',
-    src : "../assets/SKIS-IMAGES/sr-ml-spencer-top.png"
+    src : "../assets/SKIS-IMAGES/sr-ml-speNEOer-top.png"
 
 
   }
   , {
     family: 'SUPER ROCKER',
     category: 'MEDIUM LIGHT',
-    name: "SPENCER 110 SR ML",
+    name: "SPENEOER 110 SR ML",
     size: 187,
     max_height: 197,
     min_height: 187,
@@ -700,14 +700,14 @@ export interface Prediction {
     playground: ['touring-front-mountain'],
     ski_style: ['powder', 'freeride'],
     riding_speed: 'slow',
-    src : "../assets/SKIS-IMAGES/sr-ml-spencer-top.png"
+    src : "../assets/SKIS-IMAGES/sr-ml-speNEOer-top.png"
 
 
   }
   , {
     family: 'SUPER ROCKER',
     category: 'MEDIUM LIGHT',
-    name: "SPENCER 110 SR ML",
+    name: "SPENEOER 110 SR ML",
     size: 195,
     max_height: 999,
     min_height: 195,
@@ -717,7 +717,7 @@ export interface Prediction {
     playground: ['touring-front-mountain'],
     ski_style: ['powder', 'freeride'],
     riding_speed: 'slow',
-    src : "../assets/SKIS-IMAGES/sr-ml-spencer-top.png"
+    src : "../assets/SKIS-IMAGES/sr-ml-speNEOer-top.png"
 
 
   }
@@ -727,7 +727,7 @@ export interface Prediction {
   , {
     family: 'SUPER ROCKER',
     category: 'MEDIUM LIGHT',
-    name: "SPENCER 110 SR ML",
+    name: "SPENEOER 110 SR ML",
     size: 195,
     max_height: 999,
     min_height: 195,
@@ -737,16 +737,16 @@ export interface Prediction {
     playground: ['touring-front-mountain'],
     ski_style: ['powder', 'freeride'],
     riding_speed: 'slow',
-    src : "../assets/SKIS-IMAGES/sr-ml-spencer-top.png"
+    src : "../assets/SKIS-IMAGES/sr-ml-speNEOer-top.png"
 
 
   },
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: "BONATTI 70 NC UL",
+    name: "BONATTI 70 NEO UL",
     size: 155,
-    max_height: 170,
+    max_height: 160,
     min_height: 0,
     max_weight: 50,
     min_weight: 0,
@@ -761,10 +761,10 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: "BONATTI 70 NC UL",
+    name: "BONATTI 70 NEO UL",
     size: 164,
-    max_height: 179,
-    min_height: 169,
+    max_height: 169,
+    min_height: 164,
     max_weight: 63,
     min_weight: 50,
     ski_level: ['newbie', 'intermediate', 'confirmed', 'pro-guide'],
@@ -777,10 +777,10 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: "BONATTI 70 NC UL",
+    name: "BONATTI 70 NEO UL",
     size: 172,
-    max_height: 187,
-    min_height: 177,
+    max_height: 177,
+    min_height: 172,
     max_weight: 76,
     min_weight: 63,
     ski_level: ['newbie', 'intermediate', 'confirmed', 'pro-guide'],
@@ -793,10 +793,10 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: "BONATTI 70 NC UL",
+    name: "BONATTI 70 NEO UL",
     size: 180,
     max_height: 999,
-    min_height: 193,
+    min_height: 185,
     max_weight: 999,
     min_weight: 88,
     ski_level: ['newbie', 'intermediate', 'confirmed', 'pro-guide'],
@@ -809,7 +809,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'JAEGER 80 NC UL',
+    name: 'JAEGER 80 NEO UL',
     size: 156,
     max_height: 166,
     min_height: 0,
@@ -825,7 +825,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'JAEGER 80 NC UL',
+    name: 'JAEGER 80 NEO UL',
     size: 164,
     max_height: 174,
     min_height: 164,
@@ -843,7 +843,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'JAEGER 80 NC UL',
+    name: 'JAEGER 80 NEO UL',
     size: 172,
     max_height: 182,
     min_height: 172,
@@ -861,7 +861,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'JAEGER 80 NC UL',
+    name: 'JAEGER 80 NEO UL',
     size: 180,
     max_height: 190,
     min_height: 180,
@@ -879,7 +879,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'JAEGER 80 NC UL',
+    name: 'JAEGER 80 NEO UL',
     size: 188,
     max_height: 999,
     min_height: 188,
@@ -896,7 +896,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'THOR 90 NC UL',
+    name: 'THOR 90 NEO UL',
     size: 160,
     max_height: 170,
     min_height: 0,
@@ -913,7 +913,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'THOR 90 NC UL',
+    name: 'THOR 90 NEO UL',
     size: 168,
     max_height: 178,
     min_height: 168,
@@ -931,7 +931,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'THOR 90 NC UL',
+    name: 'THOR 90 NEO UL',
     size: 176,
     max_height: 186,
     min_height: 176,
@@ -949,7 +949,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'THOR 90 NC UL',
+    name: 'THOR 90 NEO UL',
     size: 184,
     max_height: 194,
     min_height: 184,
@@ -967,7 +967,7 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'THOR 90 NC UL',
+    name: 'THOR 90 NEO UL',
     size: 192,
     max_height: 999,
     min_height: 192,
@@ -984,9 +984,9 @@ export interface Prediction {
   {
     family: 'NEOTERIC CAMBER',
     category: 'ULTRA LIGHT',
-    name: 'COUTURIER 100 NC UL',
+    name: 'COUTURIER 100 NEO UL',
     size: 162,
-    max_height: 172,
+    max_height: 177,
     min_height: 0,
     max_weight: 55,
     min_weight: 0,
@@ -1001,7 +1001,7 @@ export interface Prediction {
   {
     family: 'SUPER ROCKER',
     category: 'ULTRA LIGHT',
-    name: 'COUTURIER 100 NC UL',
+    name: 'COUTURIER 100 NEO UL',
     size: 170,
     max_height: 180,
     min_height: 170,
@@ -1019,7 +1019,7 @@ export interface Prediction {
   {
     family: 'SUPER ROCKER',
     category: 'ULTRA LIGHT',
-    name: 'COUTURIER 100 NC UL',
+    name: 'COUTURIER 100 NEO UL',
     size: 178,
     max_height: 188,
     min_height: 178,
@@ -1037,7 +1037,7 @@ export interface Prediction {
   {
     family: 'SUPER ROCKER',
     category: 'ULTRA LIGHT',
-    name: 'COUTURIER 100 NC UL',
+    name: 'COUTURIER 100 NEO UL',
     size: 186,
     max_height: 196,
     min_height: 186,
@@ -1055,7 +1055,7 @@ export interface Prediction {
   {
     family: 'SUPER ROCKER',
     category: 'ULTRA LIGHT',
-    name: 'COUTURIER 100 NC UL',
+    name: 'COUTURIER 100 NEO UL',
     size: 194,
     max_height: 999,
     min_height: 194,
@@ -1147,7 +1147,7 @@ export interface Prediction {
     name: 'KRUMPE 80 NEO ML',
     size: 188,
     max_height: 999,
-    min_height: 188,
+    min_height: 185,
     max_weight: 999,
     min_weight: 90,
     ski_level: ['newbie', 'intermediate', 'confirmed', 'pro-guide'],
@@ -1163,7 +1163,7 @@ export interface Prediction {
     category: 'MEDIUM LIGHT',
     name: 'DANAÏDES 90 NEO ML',
     size: 160,
-    max_height: 170,
+    max_height: 175,
     min_height: 0,
     max_weight: 50,
     min_weight: 0,
@@ -1399,28 +1399,5 @@ export interface Prediction {
 
 
   }
-
-
-
-  , {
-    family: 'NEOTERIC CAMBER',
-    category: 'MEDUIM LIGHT',
-    name: "MALLORY 110 NEO ML",
-    size: 195,
-    max_height: 999,
-    min_height: 195,
-    max_weight: 999,
-    min_weight: 90,
-    ski_level: ['confirmed', 'pro-guide'],
-    playground: ['touring-front-mountain'],
-    ski_style: ['powder', 'freeride', 'couloire'],
-    riding_speed: 'fast',
-    src : "../assets/SKIS-IMAGES/nc-ml-mallory-top.png"
-
-
-  }
-
-
-
 
 ];

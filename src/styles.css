@@ -4,6 +4,7 @@ main {
     position : relative;
    
 }
+
 .checkbox_radio_container .radio, .checkbox_radio_container .checkbox {
   display: inline-block  !important;
   width: 25px !important;
@@ -18,6 +19,11 @@ main {
   display: flex !important;
 }
 
+#footer {
+  position: relative;
+  bottom : 0px;
+  background-color: transparent;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     :root {

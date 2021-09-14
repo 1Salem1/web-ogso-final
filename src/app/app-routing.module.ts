@@ -14,7 +14,7 @@ const routes: Routes = [
 { path: 'riding',   component:RidingSpeedComponent   },
 { path: 'style',   component:SkiStyleComponent   },
  { path: 'SkiLevel', component:SkiLevelComponent  },
- { path: 'result',   component:SkiResultComponent , data :{animation : 'isRight'}},
+ { path: 'result',   component:SkiResultComponent },
  { path: '',         component:ContentComponent }
 ];
 

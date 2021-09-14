@@ -39,3 +39,10 @@ h2 {
      height : 320px;
   }
 }
+.number {
+  display : flex;
+  height: 20px;
+  width: 20px;
+  margin : 0 auto;
+  margin-bottom: 10px;
+}
